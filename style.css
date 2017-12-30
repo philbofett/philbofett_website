@@ -1,0 +1,167 @@
+/* the float: left tells the image in the top left corner to stay there*/
+#logo {
+  float: left;
+}
+/*  designs how the footer would appear */
+#footer {
+  background-color:#474a4f;
+  /* padding spreads the footer out 20 pixels */
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  /* The opacity in this case makes the footer become transparent */
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+
+/* styles the navigation bar, which is an unordered list */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #33CC33;
+    font-family: arial black;
+}
+/* li stands for list item which is the nav bar for my website */
+li {
+    float: right;
+}
+/* This designs the lists whithin the unordered list */
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+/* when the mouse hovers over a tab in the nav bar, it will change to the designated colours */
+li a:hover {
+    background-color: white;
+    color: grey;
+}
+
+/* this just formats the background image for all the pages in the website */
+body {
+  /* To create a background image */
+  background-image: url("galaxy_background.png");
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-family: arial black;
+  background-attachment:fixed;
+}
+
+#content {
+  background-color: white;
+  align-items: center;
+  /* Leave a bit on either side */
+  width: 60%;
+  /* Make the content in the middle */
+  text-align: center;
+  margin: auto;
+padding-top: 20px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+p {
+  margin: auto;
+}
+
+/* In the 'content' I have a submit button -which is in questions.html- and this is
+the styles I used */
+#content [type=submit] {
+	   font-size: 16px;
+    color: black;
+    background-color: #33CC33;
+    font-family: arial black;
+	border: none;
+    outline: none;
+	padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+
+}
+
+/* When you hover over the 'submit' button, text will change to white  */
+#content [type=submit]:hover {
+	color: white;
+
+	outline:#000;
+	outline:thin;
+}
+
+
+/* musicplayer id connects my audio to css, I have just set my audio
+to the left below  */
+#musicplayer {
+  text-align: left;
+}
+
+#musicplayer h2 {
+  /* Move the title over a bit -what padding does */
+  padding-left: 50px;
+}
+
+#musicplayer p {
+  padding-left: 40px;
+}
+#musicplayer p {
+  padding-bottom: 40px;
+}
+
+/* Instead of using an ID, a class has been used to connect the CSS to my dropdown, it is on the right side of the page  */
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 16px 10px;
+    background-color: inherit;
+    font-family: arial black;
+}
+/* Changes the dropdown bar's colour when you hover */
+.dropdown:hover .dropbtn {
+background-color: white;
+color: grey;
+}
+
+/* Designs the content within the dropdown bar  */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    /* This gives the dropdown content a slight shadow effect */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: grey;
+}
+/*  when you hover, you make the dropdown bar appear */
+ .dropdown:hover  .dropdown-content  {
+    display: block;
+    background-color: white;
+    color: grey;
+
+}
